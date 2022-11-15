@@ -11,6 +11,9 @@ public class Car {
 //	int speed;
 //  overloading
 	
+	
+	
+	//생성자를 명시하지 않으몀 컴파일 과정에서 생성자를 생성해준다.
 	//1.필드: 객체의 데이트를 저장
 	String company= "현대자동차";
 	String model;
@@ -18,10 +21,16 @@ public class Car {
 //	boolean start;  //사동여부
 	int maxSpeed = 350;
 	int speed;
+//	int numbering = 1;  //适用于全域，所以结果都是1这给结果
+	static int numbering = 0;
+	
+	
+	Car() {
+		numbering++;
+	}
 	
 	
 	
-	//생성자를 명시하지 않으몀 컴파일 과정에서 생성자를 생성해준다.
 	Car(String model) {
 //		this.model = model;
 		this(model, "silver", 250);
