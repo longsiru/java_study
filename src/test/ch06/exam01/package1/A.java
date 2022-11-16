@@ -4,18 +4,20 @@ package test.ch06.exam01.package1;
 // 클래스는 PUBLLIC, DEFAULT접근제한자를 가잘 수 없다.
 //생성자 
 public class A {
-	A a3 = new A("문자열");  //private생성자는 같은 클래스 내에서만 사용할 수 있다.
+	public int field1;
+	int field2;
+	private int field3;
 	
-	public A(boolean b) {
-		
+	public A() {
+		field1 = 1;  //o
+		field2 = 2;  //o
+		field3 = 3;  //o
+		method1();  //o
+		method2();  //o
+		method3();  //o
 	}
 	
-	A(int b) {
-		
-	}
-	
-	
-	private A(String s) {
-		
-	}
+	public void method1() {}
+	void method2() {}
+	private void method3() {}
 }
