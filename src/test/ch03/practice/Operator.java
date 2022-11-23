@@ -1,4 +1,4 @@
-package test.ch03;
+package test.ch03.practice;
 /*
  * 运算符：
  * 전위연산자,후위연산자.

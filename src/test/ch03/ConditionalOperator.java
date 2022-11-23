@@ -1,6 +1,6 @@
 package test.ch03;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class ConditionalOperator {
 

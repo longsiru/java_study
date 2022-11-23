@@ -52,15 +52,14 @@ interface Flyable{
 	void stop();//书写时可以省略 public abstract
 }
 
-
-
 //接口
 interface Attackable{
 	void attack(); //抽象方法，省略了public abstract
 }
 
 
-//Plane类， 实现两个接口Flyable。
+
+//Plane类， 实现接口Flyable。
 class Plane implements Flyable{
 
 	@Override

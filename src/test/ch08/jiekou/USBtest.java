@@ -19,12 +19,15 @@ public class USBtest {
 
 }
 
-//电脑类
+//电脑类,传输数据
 class Computer{
-	//USB usb = new Flash(),虽然声明的是usb,但实际上是一个实现类的对象，要通过多态的方式去用，因为自己没有构造方法，造不了对象
+	//USB usb = new Flash(),虽然声明的是usb,但实际上是一个实现类的对象，要通过多态的方式去用，因为interface自己没有构造方法，造不了对象
+	//USB是interface的名字USB
+	//方法的多态
 	public void transferData(USB usb) {//要传输数据，就要遵循USB的传输规范，传输数据传输了一个usb这个对象
 		//怎么传输，首先开启
 		usb.start();
+		
 		System.out.println("具体传输数据的细节");
 		
 		//传输完之后，结束
