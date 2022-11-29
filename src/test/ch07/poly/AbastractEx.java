@@ -4,10 +4,10 @@ public class AbastractEx {
 
 	public static void main(String[] args) {
 		Dog dog = new Dog();
-//		dog.sound();
+		dog.sound();
 		
 		Cat cat = new Cat();
-//		cat.sound();
+    	cat.sound();
 		
 		//매개변수의 다형성
 		animalSound(dog);
